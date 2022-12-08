@@ -1,5 +1,7 @@
 //so um exemplo de como fazer a calculadora, fiz em 15 minutos entao talvez tenha alguns bugs, ACHO que talvez de pra fazer a operacao direto de um outro jeito mais curto mas vejo isso outro dia
 
+
+
 //funcao que troca o simbolo da operacao quando o usuario escolhe algo no <select>
 function optype(){
     //trocar aquele texto entre os inputs pelo tipo de operacao que o usuario selecionou
