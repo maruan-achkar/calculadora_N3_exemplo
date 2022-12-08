@@ -1,5 +1,11 @@
 //so um exemplo de como fazer a calculadora, fiz em 15 minutos entao talvez tenha alguns bugs, ACHO que talvez de pra fazer a operacao direto de um outro jeito mais curto mas vejo isso outro dia
 
+//funcao que troca o simbolo da operacao quando o usuario escolhe algo no <select>
+function optype(){
+    //trocar aquele texto entre os inputs pelo tipo de operacao que o usuario selecionou
+    let op = document.getElementById("select").value;
+    document.getElementById("sinal").innerHTML = op;
+}
 
 function input(){
     //pegar o valor do primeiro input, como o document.getElementById("input1").value vai retornar uma string, eu uso o n1 = parseFloat(n1) pra transformar em float.
@@ -14,10 +20,7 @@ function input(){
 
     //pegar qual tipo de operacao o usuario quer fazer, baseado no <select> que tem no HTML
     let op = document.getElementById("select").value;
-    console.log(op);
 
-    //trocar aquele texto entre os inputs pelo tipo de operacao que o usuario selecionou
-    document.getElementById("sinal").innerHTML = op;
 
     //dependendo de qual tipo de operacao o usuario selecionar, executar uma funcao. se for soma executa soma() se for subtracao executa subtracao()
     switch(op){
